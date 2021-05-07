@@ -1,8 +1,9 @@
 // 82
 const appClientID = "14583bff091241f9b3b31a04da25f90b";
-//const redirectURI = "http://localhost:3000/";
 // 97
-const redirectURI = "http://simon-is-jammming.surge.sh"
+//const redirectURI = "http://localhost:3000/";
+//const redirectURI = "http://simon-is-jammming.surge.sh"
+const redirectURI = window.location.href;
 let accessToken;
 let expiresIn;
 

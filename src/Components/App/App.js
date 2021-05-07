@@ -12,24 +12,9 @@ class App extends React.Component {
   // 30
   constructor(props) {
     super(props);
-    // step 31 hint: property called searchResults set to an 
-    // array of objects, each containing name, artist, album, and id properties. 
-    // For now hardcoded
+    // 31 
     this.state = { 
-      searchResults: [
-        // {
-        //   name: "A New Error",
-        //   artist: "Moderat", 
-        //   album: "Moderat (Deluxe Version)",
-        //   id: 548
-        // }, 
-        // {
-        //   name: "A New Error - Live",
-        //   artist: "Moderat", 
-        //   album: "Live",
-        //   id: 158
-        // }
-      ],
+      searchResults: [],
       // 37
       playlistName: "New playlist", 
       playlistTracks: []
@@ -50,12 +35,6 @@ class App extends React.Component {
 
   // 41
   addTrack(track) {
-    // correct? otherwise use hint 41
-    // for (let object of this.state.playlistTracks) {
-    //    if (object.id === track[id]) {
-    //     return;
-    //   }
-    // }
     if (this.state.playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
       return;
     }
